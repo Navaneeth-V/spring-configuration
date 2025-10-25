@@ -3,3 +3,23 @@ server:
 
 custom:
   message: Hello from Config Server!
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/mydatabase
+    username: root
+    password: password
+    driver-class-name: org.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update   # use 'validate' or 'none' in production
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+
+  # Optional: for connection pooling (HikariCP)
+  datasource:
+    hikari:
+      maximum-pool-size: 10
