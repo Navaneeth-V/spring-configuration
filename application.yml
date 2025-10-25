@@ -6,6 +6,8 @@ custom:
 
 spring:
   datasource:
+    hikari:
+      maximum-pool-size: 10
     url: jdbc:mysql://localhost:3306/mydatabase
     username: root
     password: password
@@ -18,8 +20,3 @@ spring:
     properties:
       hibernate:
         format_sql: true
-
-  # Optional: for connection pooling (HikariCP)
-  datasource:
-    hikari:
-      maximum-pool-size: 10
