@@ -11,7 +11,7 @@ spring:
     url: jdbc:mysql://localhost:3306/mydatabase
     username: root
     password: password
-    driver-class-name: org.mysql.cj.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
 
   jpa:
     hibernate:
